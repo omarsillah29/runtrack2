@@ -1,4 +1,4 @@
-<meta
+
 <?php
 $str = "Les choses que l'on possède finissent par nous posséder.";
 $inverse = ""; // Variable vide pour stocker la version inversée
