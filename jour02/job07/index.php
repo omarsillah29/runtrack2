@@ -5,9 +5,6 @@
     <title>Triangle de Pythagore</title>
     <style>
     div{
-        display: flex;
-        width: 100%;
-        justify-content: center;
         text-align: center;
         
     }
