@@ -6,5 +6,12 @@
   <input type="submit" />
 </form> 
 <?php
-echo "Le nombre d'arguments GET envoyé est: " . count($_GET) . "<br />";
+// Vérifie si le formulaire a été soumis
+if ($_SERVER["REQUEST_METHOD"] === "GET") {
+    // Compte les éléments dans le tableau $_GET
+    $nombre_arguments = count($_GET);
+
+    // Affichage du résultat
+    echo "Le nombre d'arguments GET envoyés est : " . $nombre_arguments;
+}
 ?>
