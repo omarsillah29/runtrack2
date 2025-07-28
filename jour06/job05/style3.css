@@ -1,0 +1,10 @@
+body {
+  background-color: #fcecec;
+  font-family: "Courier New", monospace;
+}
+
+form {
+  border: 3px dotted red;
+  padding: 20px;
+  margin: 20px;
+}
