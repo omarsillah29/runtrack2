@@ -1,13 +1,22 @@
-<form method="post" action="">
-   <input type="username" name="username" placeholder="Nom d'utilisateur">
-   <input type="password" name="password" placeholder="Mot de passe">
-    <input type="submit" value="Envoyer">
+<form method="POST" >
+    <label for="username">Nom d’utilisateur :</label>
+    <input type="text" name="username" id="username" placeholder="Votre nom">
+    
+    <label for="password">Mot de passe :</label>
+    <input type="password" name="password" id="password" placeholder="Votre mot de passe">
+    
+    <input type="submit" value="Connexion">
+</form>
 
 <?php
-// Vérifie si le formulaire a été soumis
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Compte les éléments dans le tableau $_POST
-    $nombre_arguments = count($_POST);
-    echo "Le nombre d'arguments POST envoyés est : " . $nombre_arguments;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if ($username === "John" && $password === "Rambo") {
+        echo "C’est pas ma guerre";
+    } else {
+        echo "Votre pire cauchemar";
+    }
 }
 ?>
